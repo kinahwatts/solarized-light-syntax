@@ -6,10 +6,8 @@ atom-text-editor {
     color: @syntax-gutter-text-color;
     background-color: @syntax-gutter-background-color;
 
-    .line-number {
-      &.cursor-line {
-        background-color: @syntax-gutter-background-color-selected;
-      }
+    .line-number.cursor-line {
+      background-color: @syntax-gutter-background-color-selected;
     }
     
     .line-number.git-line-added {
