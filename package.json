@@ -1,9 +1,15 @@
 {
-  "name": "solarized-light-syntax",
+  "name": "samaritan-syntax",
   "theme": "syntax",
-  "version": "1.1.2",
-  "description": "A light syntax theme using the solarized colors",
-  "repository": "https://github.com/atom/solarized-light-syntax",
+  "version": "1.0.0",
+  "description": "A light syntax theme based on Solarized Light that uses a minimal syntax highlighting",
+  "keywords": [
+    "minimal",
+    "light",
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/kinahwatts/solarized-light-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
