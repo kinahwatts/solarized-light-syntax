@@ -11,6 +11,32 @@ atom-text-editor {
         background-color: @syntax-gutter-background-color-selected;
       }
     }
+    
+    .line-number.git-line-added {
+      border-left-width: 3px;
+      padding-left: ~"calc(0.5em - 3px)";
+    }
+    
+    .line-number.git-line-modified {
+      border-left-width: 3px;
+      padding-left: ~"calc(0.5em - 3px)";
+    }
+    
+    .line-number.git-line-removed {
+      &::before {
+        border-width: 5px;
+        z-index: 1;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 25px;
+        border-bottom: 1px dotted fade(@syntax-color-removed, 50%);
+        pointer-events: none;
+      }
+    }
   }
   
   .line.cursor-line {
