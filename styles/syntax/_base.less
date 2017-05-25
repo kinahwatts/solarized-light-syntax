@@ -20,7 +20,7 @@
   }
   
   &.syntax--other {
-    color: @base00;
+    color: @syntax-text-color;
     
     &.syntax--placeholder {
       color: @violet;
@@ -29,47 +29,37 @@
 }
 
 .syntax--variable {
-  color: @blue;
-  
-  &.syntax--language {
-    color: @yellow;
-  }
+
 }
 
 .syntax--keyword {
   &.syntax--operator {
-    color: @base01;
+    color: @magenta;
   }
 }
 
 .syntax--storage {
-  color: @green;
+  &.syntax--modifier {
+    color: @magenta;
+  }
 }
 
 .syntax--entity {
   &.syntax--name {
-    &.syntax--class,
-    &.syntax--type,
-    &.syntax--function {
+    color: @blue;
+  }
+  &.syntax--other {
+    &.syntax--inherited-class {
       color: @blue;
     }
-  }
-  &.syntax--other.syntax--attribute-name {
-    color: @yellow;
+    &.syntax--attribute-name {
+      color: @yellow;
+    }
   }
 }
 
 .syntax--support {
-  &.syntax--function {
-    color: @blue;
-    &.syntax--builtin {
-      color: @green;
-    }
-  }
-  &.syntax--type,
-  &.syntax--class {
-    color: @green;
-  }
+  color: @orange;
 }
 
 .syntax--tag {
@@ -94,8 +84,4 @@
     background-color: @red;
     color: @base3;
   }
-}
-
-.syntax--none {
-  color: @syntax-text-color;
 }
